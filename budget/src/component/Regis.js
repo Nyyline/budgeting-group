@@ -1,61 +1,48 @@
 import React from 'react'
 import "./css/Regis.css"
+import { Link } from 'react-router-dom'
+
 
 const Regis = () => {
   return (
-    <div className="register-container">
-    <form >
-      <div className="form-group">
-        <div>
+    <div id='reg-container'>
+       <div className="register-container">
+      <form  className="register-form">
+        <div className="form-group">
           <label htmlFor="username">Username</label>
           <input
             type="text"
             id="username"
-            name="username"
-           
+            placeholder='Enter a Username'
             required
           />
         </div>
-
-        <div>
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            
-            required
-          />
-        </div>
-
-        <div>
+        <div className="form-group">
           <label htmlFor="password">Password</label>
           <input
             type="password"
             id="password"
-            name="password"
-            
+            placeholder='Create a Password'
             required
           />
         </div>
-
-        <div>
+        <div className="form-group">
           <label htmlFor="confirmPassword">Confirm Password</label>
           <input
             type="password"
             id="confirmPassword"
-            name="confirmPassword"
-            
-            
+            placeholder='Confirm Password'
             required
           />
         </div>
-      </div>
-
-      <button type="submit">Register</button>
-    </form>
-    <p><a href="#">Already have an account? Log-in here.</a></p>
-  </div>
+        <button type="submit" className="register-button">Register</button>
+      </form>
+      <p className="login-link">
+        Already have an account? <Link to={"/login"}>Log-in here.</Link>
+      </p>
+    </div>
+    </div>
+   
   )
 }
 
