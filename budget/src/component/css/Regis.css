@@ -1,0 +1,99 @@
+/* fonts */
+
+@font-face {
+    font-family: "avant";
+    src: url(./fonts/AvantGardeBookBT.ttf);
+}
+
+
+@font-face {
+    font-family: "bubble";
+    src: url(./fonts/Bubblegum.ttf);
+}
+
+
+/* css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-image: url(./bg/3.png);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+  }
+  .register-container {
+    background-color: #d32f2f;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .form-group div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  label {
+    font-weight: bold;
+    text-align: left;
+    color: #f6f4e4;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f6f4e4;
+    color: #3e2723;
+    text-align: center;
+  }
+  
+  input[type="text"]::placeholder, 
+  input[type="email"]::placeholder, 
+  input[type="password"]::placeholder {
+    color: #3e2723;
+  }
+  
+  button {
+    background-color: #3e2723;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #5d4037;
+  }
+  
+  a {
+    color: #3e2723;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
