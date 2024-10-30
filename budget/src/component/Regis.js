@@ -56,8 +56,10 @@ const Regis = () => {
   };
 
   return (
-    <div>
+    <div id="container">
+      <div>
       <img src='./elements/1.png' id='logo' alt='Logo' />
+      </div>
       <div id='reg-container'>
         <div className="register-container">
           <form className="register-form" onSubmit={handleSubmit}>
